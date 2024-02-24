@@ -7,6 +7,7 @@
   "mixins": [
   ],
   "client": [
+    "ForgeIngameGuiMixin"
   ],
   "injectors": {
     "defaultRequire": 1
