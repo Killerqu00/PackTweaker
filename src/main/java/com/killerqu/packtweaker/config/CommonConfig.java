@@ -11,7 +11,6 @@ public class CommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_SLEEP;
     public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_HUNGER;
     public static final ForgeConfigSpec.ConfigValue<Integer> CONSTANT_HUNGER_VALUE;
-
     static {
         BUILDER.push("PackTweaker config");
 

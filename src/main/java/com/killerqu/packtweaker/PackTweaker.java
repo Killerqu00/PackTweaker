@@ -1,5 +1,6 @@
 package com.killerqu.packtweaker;
 
+import com.killerqu.packtweaker.config.ClientConfig;
 import com.killerqu.packtweaker.config.CommonConfig;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -35,6 +36,7 @@ public class PackTweaker {
 
     public PackTweaker() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ClientConfig.SPEC);
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
     }
