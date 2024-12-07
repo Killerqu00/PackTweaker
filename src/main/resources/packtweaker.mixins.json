@@ -4,8 +4,7 @@
   "package": "com.killerqu.packtweaker.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "PackTweaker.refmap.json",
-  "mixins": [
-  ],
+  "mixins": [],
   "client": [
     "ForgeIngameGuiMixin",
     "PauseScreenMixin"
