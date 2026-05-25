@@ -3,8 +3,10 @@
   "minVersion": "0.8",
   "package": "com.killerqu.packtweaker.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "PackTweaker.refmap.json",
-  "mixins": [],
+  "refmap": "packtweaker.refmap.json",
+  "mixins": [
+    "VillagerTradesMixin"
+  ],
   "client": [
     "ForgeIngameGuiMixin",
     "PauseScreenMixin"

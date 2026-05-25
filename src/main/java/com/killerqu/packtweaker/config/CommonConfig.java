@@ -11,6 +11,7 @@ public class CommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_SLEEP;
     public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_HUNGER;
     public static final ForgeConfigSpec.ConfigValue<Integer> CONSTANT_HUNGER_VALUE;
+    public static final ForgeConfigSpec.ConfigValue<Boolean> ENABLE_TRADING;
     static {
         BUILDER.push("PackTweaker config");
 
@@ -22,6 +23,8 @@ public class CommonConfig {
                 .define("Enable Hunger", true);
         CONSTANT_HUNGER_VALUE = BUILDER.comment("If hunger was disabled, this amount will be used as your hunger value.")
                 .define("Constant Hunger Value", 18);
+        ENABLE_TRADING = BUILDER.comment("If false, trading with villagers is disabled. The list of trades is unaffected, as is the rank of the villager. Wandering traders are unaffected, use gamerules to disable them.")
+                .define("Enable Villager Trading", true);
 
         BUILDER.pop();
         SPEC = BUILDER.build();
